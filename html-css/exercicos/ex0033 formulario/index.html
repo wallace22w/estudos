@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+                    <p><label for="cNome">Nome:<input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></label></p>
+                    <p><label for="cSenha">Senha:<input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos"></label></p>
+                    <p><label for="cMail">Email:<input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></label></p>
+                    <fieldset id="sexo"><legend>Sexo:</legend>
+                           <input type="radio" name="tSexo" id="Cmasc"/>  <label for="Cmasc">Masculino</label><br>
+                            <input type="radio" name="tSexo" id="cFem"/> <label for="cFem"> Feminio</label>
+                    </fieldset>
+                    <p><label for="Cnasc">Data de Nascimento: <input type="date" name="tNasc" id="Cnasc"/></label></p>
+            </fieldset>
+
+            <fieldset id="endereco"><legend>Endereço de Usuário</legend>
+                <p><label for="cRua">Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav"/></label></p>
+                <p><label for="cNum">Número:<input type="number" name="tNum" id="cNum" min="0" max="9999"/></label>
+                </p>
+                <p><label for="cEst">Estado:</label>
+                <select name="tEst" id="cEst">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </select></p>
+
+                <P><label for="cCid">Cidade:</label>
+                <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"></P>
+                <datalist id="cidades">
+                    <option value="Rio de Janeior"></option>
+                    <option value="Nova Iguaçu"></option>
+                    <option value="Niterói"></option>
+                    <option value="Ipanema"></option>
+                </datalist>
+            </fieldset>
+
+            <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+                <P><label for="cUrg">Grau de Urgência:</label>
+                Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Máx</P>
+                <P><label for="cMsg">Mensagem: </label>
+                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua Mensagem"></textarea></P>
+            </fieldset>
+
+            <fieldset id="pedido"><legend>Quero um Google Glass</legend>
+                Gostaria de adquirir um Google Glass quando disponível cor:
+                Quantidade:
+                Preço Total: R$
+            </fieldset>
+
+            [BOTÃO ENVIAR]
+        </form>
+    </div>
+</body>
+</html>
